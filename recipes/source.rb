@@ -51,7 +51,7 @@ execute 'phantomjs-install' do
 end
 
 link 'phantomjs-link' do
-  target_file   '/usr/local/bin/phantomjs'
+  target_file   '/usr/bin/phantomjs'
   to            "/usr/local/#{basename}/bin/phantomjs"
   owner         'root'
   group         'root'
